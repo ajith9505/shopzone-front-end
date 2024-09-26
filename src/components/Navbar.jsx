@@ -11,6 +11,10 @@ const Navbar = () => {
                         <h1 className="font-semibold text-xl cursor-pointer">Shope Zone</h1>
                     </Link>
                 </div>
+                <div className='flex items-center'>
+                    <div className='m-2'>Register</div>
+                    <div className='m-2'>login</div>
+                </div>
             </div>
         </div>
     )

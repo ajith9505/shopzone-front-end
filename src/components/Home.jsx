@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import axios from "axios"
 import Product from "./Product";
+import Search from "./Search";
 
 const Home = () => {
     const [products, setProducts] = useState([]);
@@ -33,6 +34,7 @@ const Home = () => {
     return (
         <>
             <div className="bg-slate-100">
+                <Search products={products} setProducts={setFilteredProducts} />
                 <div className="flex flex-col justify-between items-center p-3">
                     <h2 className="font-bold m-2">Filter by catogory</h2>
                     <div className="flex flex-col md:flex-row">
