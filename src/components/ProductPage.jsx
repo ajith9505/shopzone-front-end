@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import {
     FaBox,
-    FaClock,
     FaShoppingCart,
     FaStar,
     FaStore,
@@ -40,16 +39,13 @@ const ProductPage = () => {
                     <p className="my-4 xl:w-[35rem] lg:w-[30] md:w-[20rem] text-[#B0B0B0]">
                         {product.description}
                     </p>
-                    <p className="text-5xl my-4 font-extrabold">{product.price} Rs</p>
+                    <p className="text-xl my-4 text-rose-500 font-bold">{product.price} Rs</p>
 
                     <div className="flex items-center justify-between w-[20rem]">
                         <div className="one">
                             <h1 className="flex items-center mb-6">
                                 <FaStore className="mr-2 text-slate-900" /> Brand:{" "}
                                 {product.brand}
-                            </h1>
-                            <h1 className="flex items-center mb-6">
-                                <FaClock className="mr-2 text-slate-900" /> Added:{" "}
                             </h1>
                             <h1 className="flex items-center mb-6">
                                 <FaStar className="mr-2 text-slate-900" /> Reviews:
