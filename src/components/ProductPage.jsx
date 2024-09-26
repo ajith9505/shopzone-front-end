@@ -26,22 +26,21 @@ const ProductPage = () => {
     if (loading) return <div>loading...</div>
     return (
         <>
-            <div className="flex flex-wrap relative bg-slate-100 items-between p-4">
+            <div className="flex flex-wrap relative bg-slate-100 p-4 justify-center">
                 <div>
                     <img
                         src={product.image}
                         alt={product.name}
-                        className="w-full  xl:w-[50rem] lg:w-[45rem] md:w-[30rem] sm:w-[20rem] mr-[2rem]"
+                        className="w-full  xl:w-[25rem] lg:w-[20rem] md:w-[30rem] sm:w-[15rem] mr-[2rem] my-[2rem]"
                     />
                 </div>
                 <div className="flex flex-col justify-between">
-                    <h2 className="text-2xl font-semibold">{product.name}</h2>
+                    <h2 className="text-2xl lg:w-[30rem] font-semibold">{product.name}</h2>
 
-                    <p className="my-4 xl:w-[35rem] lg:w-[35] md:w-[30rem] text-[#B0B0B0]">
+                    <p className="my-4 xl:w-[35rem] lg:w-[30] md:w-[20rem] text-[#B0B0B0]">
                         {product.description}
                     </p>
                     <p className="text-5xl my-4 font-extrabold">${product.price}</p>
-                    {/* --------------------------------------------------- */}
 
                     <div className="flex items-center justify-between w-[20rem]">
                         <div className="one">
