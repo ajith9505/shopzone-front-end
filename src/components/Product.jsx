@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Product = ({ product }) => {
     return (
-        <div className="w-[30rem] ml-[2rem] p-3 relative">
+        <div className="md:w-[30rem] p-3 relative">
             <div className="relative flex justify-center">
                 <Link to={`/product/${product._id}`}>
                     <img
@@ -16,7 +16,7 @@ const Product = ({ product }) => {
             <div className="p-4">
                 <Link to={`/product/${product._id}`}>
                     <h2 className="text-center">
-                        <div className="text-md truncate">{product.name}</div>
+                        <div className="text-sm md:truncate sm:text-sm ">{product.name}</div>
                         <div className="mt-2">
                             <span className="bg-pink-100 text-pink-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">
                                 {product.price} Rs
